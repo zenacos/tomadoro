@@ -76,7 +76,8 @@ tomato-six-one.png
 - 🖥️ **Electron** — desktop app wrapper
 - 🌐 **HTML & CSS** — UI structure and styling
 - ⚙️ **JavaScript** — timer logic
-- 🎨 **Figma** — pixel art UI design
+- 🖌️ **pixel art assets** — all illustrations created from scratch, assembled in Figma
+- 🔗 [Figma design file](https://www.figma.com/design/rWQTKW6fCwahw24nMbZyd1/tomadoro?node-id=0-1&t=cfjGcgV3qC5QoXZj-1)
 - ✏️ **Jersey 15** — pixel font via Google Fonts
 - 💛 a lot of love for tiny tomatoes
 
