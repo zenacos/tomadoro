@@ -57,7 +57,7 @@ Drop these into the `assets/` folder:
 ```
 seed.png
 background-two.png
-power.png
+quit.png
 pause.png
 continue.png
 Tomato-one.png
