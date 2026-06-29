@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 507px;
+  height: 760px;
+  background: url('assets/background-two.png') center/cover no-repeat;
+  overflow: hidden;
+  user-select: none;
+  -webkit-app-region: drag;
+  border-radius: 16px;
+}
+
+.screen {
+  display: none;
+  width: 507px;
+  height: 760px;
+  position: relative;
+}
+
+.screen.active {
+  display: block;
+}
+
+img {
+  -webkit-app-region: no-drag;
+}
+
+button {
+  -webkit-app-region: no-drag;
+}

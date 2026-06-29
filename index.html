@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Tomadoro</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HOME SCREEN -->
+  <div class="screen active" id="screen-home">
+    <div style="text-align:center; color:#92181F; font-size:84px; font-family:'Jersey 15'; position:absolute; left:95px; top:14px; -webkit-text-stroke: 1px black;">tomadoro!</div>
+    <div style="position:absolute; left:111px; top:83px; text-align:center; color:#FAB3B6; font-size:32px; font-family:'Jersey 15'; -webkit-text-stroke: 1px black;">tap the seed to start &lt;3</div>
+    <img src="assets/seed.png" style="width:174px; height:174px; left:166px; top:225px; position:absolute; cursor:pointer; image-rendering:pixelated;" onclick="startTimer()">
+  </div>
+
+  <!-- TIMER SCREEN -->
+  <div class="screen" id="screen-timer">
+    <div style="text-align:center; color:#92181F; font-size:84px; font-family:'Jersey 15'; position:absolute; left:95px; top:14px; -webkit-text-stroke: 1px black;">tomadoro!</div>
+    <div id="stage-label" style="position:absolute; left:184px; top:83px; text-align:center; color:#FAB3B6; font-size:32px; font-family:'Jersey 15'; -webkit-text-stroke: 1px black;">keep going!!</div>
+
+    <img id="plant-img" src="assets/Tomato-one.png"
+      style="width:392px; height:392px; left:71px; top:195px; position:absolute; image-rendering:pixelated; transition:opacity 0.4s ease;">
+
+    <img src="assets/quit.png" onclick="quitTimer()"
+      style="width:56px; height:56px; left:439px; top:14px; position:absolute; border-radius:11px; cursor:pointer; image-rendering:pixelated;">
+
+    <!-- Timer kutusu -->
+    <div style="width:248px; height:114px; padding-top:15px; padding-bottom:15px; padding-left:57px; padding-right:56px; left:130px; top:618px; position:absolute; opacity:0.80; background:#C5E5EA; border-radius:35px; outline:7px #6ACDDB solid; outline-offset:-7px; justify-content:center; align-items:center; display:inline-flex;">
+      <div id="timer" style="text-align:center; color:black; font-size:50px; font-family:'Jersey 15'; font-weight:400;">30 : 00</div>
+    </div>
+
+    <!-- Continue (sol) -->
+    <img id="continueBtn" src="assets/continue.png" onclick="togglePause()"
+      style="width:67px; height:67px; left:44px; top:638px; position:absolute; border-radius:11px; cursor:pointer; image-rendering:pixelated; display:none;">
+
+    <!-- Pause (sağ) -->
+    <img id="pauseBtn" src="assets/pause.png" onclick="togglePause()"
+      style="width:67px; height:67px; left:397px; top:638px; position:absolute; border-radius:11px; cursor:pointer; image-rendering:pixelated;">
+  </div>
+
+  <!-- END SCREEN -->
+  <div class="screen" id="screen-end">
+    <div style="text-align:center; color:#92181F; font-size:84px; font-family:'Jersey 15'; position:absolute; left:95px; top:14px; -webkit-text-stroke: 1px black;">tomadoro!</div>
+    <div style="position:absolute; left:111px; top:83px; text-align:center; color:#FAB3B6; font-size:32px; font-family:'Jersey 15'; -webkit-text-stroke: 1px black;">here is your tomato &lt;3</div>
+    <img src="assets/Tomato-six.png"
+      style="width:392px; height:392px; left:71px; top:195px; position:absolute; image-rendering:pixelated;">
+    <button onclick="goHome()"
+      style="width:248px; height:114px; padding-top:15px; padding-bottom:15px; padding-left:57px; padding-right:56px; left:130px; top:618px; position:absolute; opacity:0.80; background:#C5E5EA; border-radius:35px; outline:7px #6ACDDB solid; outline-offset:-7px; justify-content:center; align-items:center; display:inline-flex; font-family:'Jersey 15'; font-size:32px; color:#92181F; cursor:pointer; -webkit-text-stroke: 1px black;">
+      again :3
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

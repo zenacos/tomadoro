@@ -1,0 +1,12 @@
+{
+  "name": "tomadora",
+  "version": "1.0.0",
+  "description": "Pixel domates yetiştirme focus timer",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^29.0.0"
+  }
+}
